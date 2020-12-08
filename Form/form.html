@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <style> 
+    #name{
+      margin-left: 70px;
+      margin-bottom: 10px;
+    }
+    #email{
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    #password{
+      margin-left: 45px;
+      margin-bottom: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <form name="myform">
+      <label for="name">Name</label>
+      <input type="text" name="fname" id="name" value="" pattern="[A-Za-z]+"/> <br/>
+      <label for="email">email address</label>
+      <input type="email" name="email" id="email" value="" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/> <br/>
+      <label for="password">Password</label>
+      <input type="password"name="password" id="password" value="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"/> <br/>
+    
+
+    <br/>
+    <input onclick="validation()" type="submit" value="Submit"/>
+
+
+    </form>
+  </body>
+  <script> 
+  function validation()
+  {
+    if(document.getElementById("name").value=="")
+    {
+      alert("Please enter a name");
+    }
+    if(document.getElementById("email").value=="")
+    {
+      alert("Please enter a valid email");
+    }
+    if(document.getElementById("password").value=="")
+    {
+      alert("Please enter valid password");
+    }
+    
+  } 
+
+  </script>
+  </html>

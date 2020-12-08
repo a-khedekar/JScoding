@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practice</title>
+<style type="text/css"> 
+/* #school {
+    font-weight: bold;
+} */
+#university{
+    font-family: cursive;
+}
+.boldclass{
+    font-weight: bold;
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    font-family: cursive;
+}
+div{
+    color:blue;
+}
+#yellow{
+    color: yellow;
+}
+#one{
+    color: yellow;
+}
+.color1{
+    color: violet;
+}
+.color2{
+    color: rgb(140, 112, 216);
+}
+#img{
+    width: 500px;
+    height: 500px;
+    margin-left: 20px;
+    padding-left: 400px;
+}
+</style>
+</head>
+
+<body>
+<p class="boldclass">This is a paragraph</p>
+I have studied in <span id="school" class="boldclass"> Goa</span> 
+Suraj studied with me <span class="boldclass">GoaU</span>
+vedita studied in <span id="university">Delhi</span>
+<p class="boldclass"> Chetan works for Amazon class</p>
+<div>Colour should be Blue </div>
+<div>this is blue too</div>
+<img id="img" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/>
+<div id="yellow">This is in yellow</div>
+<div> <span id ="one">half is yellow </span> half is green </div>
+<div class= "color1"> this is me</div>
+<div class= "color1"> this is me</div>
+<div class= "color1"> this is me</div>
+<div class= "color1"> this is me</div>
+<div class= "color2"> this is me</div>
+<div class= "color2"> this is me</div>
+<div class= "color2"> this is me</div>
+<div class= "color2"> this is me</div>
+<p class= "color1"> this is me this is me </p>
+
+</body>
+<script type="text/javascript">
+var vehicle = {
+    "twoWheeler": "bike",
+    fourwheeler:"car",
+    sixwheeler:"truck"
+}
+console.log(vehicle)
+console.log(vehicle.twoWheeler)
+console.log(vehicle.fourwheeler)
+var arr = [1,"one",3]
+console.log(arr[1])
+for(var i of arr){
+    console.log(i);
+}
+console.log("I have a " + vehicle.fourwheeler + ". A big car") ///concatenation
+console.log(`I have a ${vehicle.fourwheeler}. A big car`) ///string literals or string interpolation
+var jscourse= {
+    Title:"javascript course",
+    Price: 20,
+    description:"this is a course on JS"
+}
+console.log("The price is " + (jscourse.Price + 1));
+
+</script>
+
+</html>

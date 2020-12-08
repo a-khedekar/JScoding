@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="../assets/form.css">
+</head>
+  <body>
+    <form name="myform">
+      <label for="name">Name</label>
+      <input type="text" name="fname" id="name" value="" /> <br/>
+      <label for="email">email address</label>
+      <input type="email" name="email" id="email" value="" /> <br/>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" value="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"/> <br/>
+      <div id="success" class="successMsg"></div>
+      <div id="errorNameMsg" class="errorMsg"></div>
+      <div id="errorNameMsg" class="errorMsg"></div>
+      <div id="errorPasswordMsg" class="errorMsg"></div>
+      <div id="errorBlankMsg" class="errorMsg"></div>
+    <br/>
+    <input onclick="validation()" type="button" value="Submit"/>
+
+    </form>
+  </body>
+  <script src="form.js"></script>  
+  </html>

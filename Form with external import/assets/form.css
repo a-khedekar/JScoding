@@ -1,0 +1,24 @@
+#name{
+    margin-left: 70px;
+    margin-bottom: 10px;
+  }
+  #email{
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  #password{
+    margin-left: 45px;
+    margin-bottom: 10px;
+  }
+  label{
+      color: brown;
+  }
+
+.successMsg {
+  color: green;
+  display: none;
+}
+.errorMsg {
+  color: red;
+  display: none;
+}
